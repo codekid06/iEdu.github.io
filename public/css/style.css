@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Stoke:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    /* background-color: black; */
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-list li a:hover {
+    text-decoration: underline;
+}
+
+.rightnav {
+    /* background-color: aqua; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7)url('/img/bg.jpg');
+    block-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection {
+    height: 100vh;
+}
+
+.box-main {
+    /* border: 2px solid red; */
+    display: flex;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.right {
+    /* border: 3px solid green; */
+    width: 30%;
+}
+
+.right img {
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 950px;
+    display: block;
+    margin: auto;
+}
+
+.left {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 3px solid yellow; */
+}
+
+.text-big {
+    font-size: 50px;
+    text-align: center;
+}
+
+.text-small {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid white;
+    padding: 8px 20px;
+    margin: 0px 7px;
+    border-radius: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    background: none;
+    color: white;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.fluid {
+    width: 60%;
+    border-radius: 45px;
+    border: 3px solid gray;
+    display: block;
+    margin: auto;
+}
+
+.thumbnail {
+    width: 50%;
+    /* border:2px solid red; */
+}
+
+.Section {
+    /* border:2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 90%;
+    font-family: 'Stoke', serif;
+    padding: 12px;
+}
+
+.leftSec {
+    flex-direction: row-reverse;
+}
+
+.paras {
+    padding: 0px 60px;
+    width: 50%;
+}
+
+.contact {
+    background-color: rgb(233, 230, 230);
+    font-family: 'Stoke', serif;
+    padding: 10px;
+}
+
+.foothead {
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+}
+
+.form input {
+    width: 100%;
+    font-size: 19px;
+    margin: 20px 0px;
+    padding: 12px 13px;
+    border-radius: 7px;
+}
+
+.form {
+    width: 62%;
+    margin: 40px auto;
+}
+
+.btn-dark {
+    color: black;
+    border: 2px solid black;
+}
+
+.footbtn {
+    text-align: center;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    font-family: 'Stoke', serif;
+    height: 10vh;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    height: 4px;
+    background: white;
+    margin: 5px;
+}
+
+@media only screen and (max-width:1140px) {
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 500px;
+        transition: all 0.5s ease-out;
+    }
+
+    .rightnav {
+        text-align: center;
+    }
+
+    .btn-sm {
+        margin: 5px;
+    }
+
+    #search {
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-resp{
+        height: 72px;
+    }
+    .v-resp{
+      opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .Section{
+        flex-direction: column-reverse;
+    }
+    .paras{
+        padding: 0px 0px;
+    }
+    .text-big{
+        font-size: 22px;
+    }
+}

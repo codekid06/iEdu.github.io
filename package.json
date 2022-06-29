@@ -1,0 +1,20 @@
+{
+  "name": "yash",
+  "version": "1.0.0",
+  "description": "responsive website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "codekid06"
+  },
+  "author": "yash",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.18"
+  }
+}
